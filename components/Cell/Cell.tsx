@@ -6,5 +6,5 @@ interface Props {
   onClick: () => void;
 }
 export const Cell = ({ isAlive, onClick }: Props) => {
-  return <Button onClick={onClick} color={isAlive ? 'yellow' : 'gray'} />;
+  return <Button onClick={onClick} color={isAlive ? 'yellow' : 'gray'} radius={0} />;
 };
