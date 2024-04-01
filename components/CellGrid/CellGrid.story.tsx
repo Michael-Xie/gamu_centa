@@ -4,12 +4,14 @@ import { CellGrid } from './CellGrid';
 export default {
   component: CellGrid,
   tags: ['autodocs'],
-  args: { onClick: fn() },
+  args: { onCellClick: fn() },
 };
 
 export const Default = {
   args: {
-    numRows: 10,
-    numCols: 10,
+    gridData: [
+      [true, false],
+      [false, true],
+    ],
   },
 };
